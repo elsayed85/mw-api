@@ -8,6 +8,7 @@ async function makeTmdbRequest(path) {
     return response.json();
 }
 
+
 function guessBestMatch(query, results) {
     const enResults = results.filter((result) => result.original_language === "en");
     const _equal = (a, b) => a.localeCompare(b, "en", { "sensitivity": "accent" });
