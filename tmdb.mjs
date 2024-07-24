@@ -2,7 +2,7 @@ async function makeTmdbRequest(path) {
     const response = await fetch(`https://api.themoviedb.org/3/${path}`, {
         "headers": {
             "accept": "application/json",
-            "authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNzIzYmFiNjEyZGQ2ODE0ZGU5N2NhNTM3NjliOGZmMiIsInN1YiI6IjY1MTVlYjBkY2FkYjZiMDJiZjAxMWZiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8m-XSM_5y3xP3UwfhDD_kmM54SU5NW0c9Oe_j_BZhdQ"
+            "authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4OWJlMDJjYjM4ZDdkMmQxZjQzMjJmZDQwZDE1MDRmYSIsIm5iZiI6MTcyMTgwNTI1Ny45NDE5OTEsInN1YiI6IjYzOWEwMjBjYTRhZjhmMDA5MWNkYjcxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oNW5ls2Zc0zNqDtDf7jNhRtvqmnlfsUiVcyHubsY1P8"
         }
     });
     return response.json();
